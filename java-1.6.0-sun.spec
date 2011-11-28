@@ -84,7 +84,7 @@
 
 Name:           java-%{javaver}-%{origin}
 Version:        %{javaver}.%{buildver}
-Release:        1%{?dist}.R
+Release:        1.R
 Epoch:          1
 Summary:        Sun Java Runtime Environment
 License:        Oracle Corporation Binary Code License
