@@ -33,7 +33,7 @@
 %define origin          sun
 %define javaver         1.6.0
 %define cvsver          6
-%define buildver        29
+%define buildver        30
 %define tzversion       1_3_34-2010o
 %define priority        1600%{buildver}
 %define tzupdate        0
@@ -90,8 +90,8 @@ Summary:        Sun Java Runtime Environment
 License:        Oracle Corporation Binary Code License
 Group:          Development/Languages
 URL:            http://java.sun.com/javase/6
-Source0:        http://download.oracle.com/otn-pub/java/jdk/%{cvsversion}-b11/jdk-%{cvsversion}-linux-i586.bin
-Source1:	http://download.oracle.com/otn-pub/java/jdk/%{cvsversion}-b11/jdk-%{cvsversion}-linux-x64.bin
+Source0:        http://download.oracle.com/otn-pub/java/jdk/%{cvsversion}-b12/jdk-%{cvsversion}-linux-i586.bin
+Source1:	http://download.oracle.com/otn-pub/java/jdk/%{cvsversion}-b12/jdk-%{cvsversion}-linux-x64.bin
 Source100:      tzupdater-%{tzversion}.zip
 Provides:       jre-%{javaver}-%{origin} = %{epoch}:%{version}-%{release}
 Provides:       jre-%{origin} = %{epoch}:%{version}-%{release}
@@ -781,6 +781,9 @@ fi
 %{_mandir}/man1/javaws-%{name}.%{_arch}.1*
 
 %changelog
+* Tue Dec 13 2011 Arkady L. Shane <ashejn@russianfedora.ru> - 1:1.6.0.30-1.R
+- update to 1.6.0.30
+
 * Mon Nov 27 2011 Arkady L. Shane <ashejn@russianfedora.ru> - 1:1.6.0.29-1.R
 - update to 1.6.0.29
 
