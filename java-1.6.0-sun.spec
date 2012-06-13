@@ -350,7 +350,7 @@ done
 
 # demo
 install -d -m 755 $RPM_BUILD_ROOT%{_jvmdir}/%{sdkdir}
-cp -a demo $RPM_BUILD_ROOT%{_jvmdir}/%{sdkdir}
+#cp -a demo $RPM_BUILD_ROOT%{_jvmdir}/%{sdkdir}
 # mark README.txt files as %%doc
 (
 find $RPM_BUILD_ROOT%{_jvmdir}/%{sdkdir}/demo -type d \
