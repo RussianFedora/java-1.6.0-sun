@@ -33,7 +33,7 @@
 %define origin          sun
 %define javaver         1.6.0
 %define cvsver          6
-%define buildver        30
+%define buildver        33
 %define tzversion       1_3_34-2010o
 %define priority        1600%{buildver}
 %define tzupdate        0
@@ -781,6 +781,9 @@ fi
 %{_mandir}/man1/javaws-%{name}.%{_arch}.1*
 
 %changelog
+* Wed Jun 13 2012 Arkady L. Shane <ashejn@russianfedora.ru> - 1:1.6.0.33-1.R
+- update to 1.6.0.33
+
 * Tue Dec 13 2011 Arkady L. Shane <ashejn@russianfedora.ru> - 1:1.6.0.30-1.R
 - update to 1.6.0.30
 
