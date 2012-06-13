@@ -89,9 +89,9 @@ Epoch:          1
 Summary:        Sun Java Runtime Environment
 License:        Oracle Corporation Binary Code License
 Group:          Development/Languages
-URL:            http://java.sun.com/javase/6
-Source0:        http://download.oracle.com/otn-pub/java/jdk/6u33-b03/jdk-6u33-linux-i586.bin
-Source1:	http://download.oracle.com/otn-pub/java/jdk/6u33-b03/jdk-6u33-linux-x64.bin
+URL:            http://www.oracle.com
+Source0:        jdk-6u33-linux-i586.bin
+Source1:	jdk-6u33-linux-x64.bin
 Source100:      tzupdater-%{tzversion}.zip
 Provides:       jre-%{javaver}-%{origin} = %{epoch}:%{version}-%{release}
 Provides:       jre-%{origin} = %{epoch}:%{version}-%{release}
