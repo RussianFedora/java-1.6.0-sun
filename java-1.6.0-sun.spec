@@ -165,9 +165,9 @@ Requires:       %{name} = %{epoch}:%{version}-%{release}
 Requires:       %{_bindir}/find, sed
 Requires:       %{_libdir}/mozilla/plugins
 # chkconfig needed for the various alternatives utilities
-Requires(pre):  chkconfig, %{_libdir}/mozilla/plugins
-Requires(post): chkconfig, %{_libdir}/mozilla/plugins
-Requires(postun): chkconfig
+Requires(pre):  chkconfig, %{_libdir}/mozilla/plugins, grep
+Requires(post): chkconfig, %{_libdir}/mozilla/plugins, grep
+Requires(postun): chkconfig, grep
 Provides:       java-plugin = %{epoch}:%{javaver}, java-%{javaver}-plugin = %{epoch}:%{version}
 Provides:       javaws = %{epoch}:%{javaws_ver}
 Obsoletes:      javaws-menu
