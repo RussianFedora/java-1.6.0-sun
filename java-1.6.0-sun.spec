@@ -796,7 +796,7 @@ fi
 * Tue Dec 13 2011 Arkady L. Shane <ashejn@russianfedora.ru> - 1:1.6.0.30-1.R
 - update to 1.6.0.30
 
-* Mon Nov 27 2011 Arkady L. Shane <ashejn@russianfedora.ru> - 1:1.6.0.29-1.R
+* Sun Nov 27 2011 Arkady L. Shane <ashejn@russianfedora.ru> - 1:1.6.0.29-1.R
 - update to 1.6.0.29
 
 * Mon Dec 20 2010 Paul Howarth <paul@city-fan.org> - 1:1.6.0.23-1.0.cf
@@ -862,7 +862,7 @@ fi
 * Tue Mar  2 2010 Paul Howarth <paul@city-fan.org> - 0:1.6.0.18-1.0.cf
 - update to 1.6.0.18
 
-* Thu Nov  9 2009 Paul Howarth <paul@city-fan.org> - 0:1.6.0.17-1.0.cf
+* Mon Nov  9 2009 Paul Howarth <paul@city-fan.org> - 0:1.6.0.17-1.0.cf
 - update to 1.6.0.17
 
 * Mon Aug 17 2009 Paul Howarth <paul@city-fan.org> - 0:1.6.0.16-1.0.cf
@@ -954,7 +954,7 @@ fi
 * Fri Sep 29 2006 Jason Corley <jason.corley@gmail.com> 0:1.5.0.08-1jpp
 - Upgrade to 1.5.0_08
 
-* Fri Jun 8 2006 Jason Corley <jason.corley@gmail.com> 0:1.5.0.07-1jpp
+* Thu Jun 8 2006 Jason Corley <jason.corley@gmail.com> 0:1.5.0.07-1jpp
 - Upgrade to 1.5.0_07
 
 * Fri Feb 3 2006 Jason Corley <jason.corley@gmail.com> 0:1.5.0.06-1jpp
