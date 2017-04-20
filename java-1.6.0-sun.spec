@@ -348,6 +348,7 @@ for manpage in man/man1/*; do
   install -m 644 -p $manpage $RPM_BUILD_ROOT%{_mandir}/man1/`basename $manpage .1`-%{name}.%{_arch}.1
 done
 
+%if 0
 # demo
 install -d -m 755 $RPM_BUILD_ROOT%{_jvmdir}/%{sdkdir}
 #cp -a demo $RPM_BUILD_ROOT%{_jvmdir}/%{sdkdir}
@@ -359,6 +360,7 @@ find $RPM_BUILD_ROOT%{_jvmdir}/%{sdkdir}/demo -type f -o -type l \
   | sed 's|'$RPM_BUILD_ROOT'||' \
   | awk '/\/README.txt$/ { printf "%%%%doc " } { print }'
 ) > %{name}-%{version}-demo.files
+%endif
 
 # make placeholder directory for plugin
 mkdir -p $RPM_BUILD_ROOT%{_libdir}/mozilla/plugins
@@ -696,8 +698,8 @@ fi
 %config(noreplace) %{_jvmdir}/%{jredir}/lib/security/java.security
 %ghost %{_jvmdir}/%{jredir}/lib/security/local_policy.jar
 %ghost %{_jvmdir}/%{jredir}/lib/security/US_export_policy.jar
-%{_jvmdir}/%{jrelnk}/
-%{_jvmjardir}/%{jrelnk}/
+%{_jvmdir}/%{jrelnk}
+%{_jvmjardir}/%{jrelnk}
 %{_jvmjardir}/%{sdkdir}/
 %{_jvmprivdir}/%{policydir}/
 %{_mandir}/man1/java-%{name}.%{_arch}.1*
@@ -753,7 +755,7 @@ fi
 %defattr(-,root,root,-)
 %{_jvmdir}/%{sdkdir}/src.zip
 
-%files -f %{name}-%{version}-demo.files demo
+%files demo
 %defattr(-,root,root,-)
 
 %files jdbc
